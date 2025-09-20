@@ -1,0 +1,8 @@
+site_name: GAC de PAC Documentation
+theme:
+  name: material
+
+nav:
+  - Accueil: README.md
+  - Roadmap: ROADMAP.md
+  - Changelog: CHANGELOG.md
