@@ -1,0 +1,33 @@
+{
+  "name": "gac-de-pac",
+  "version": "1.0.0",
+  "description": "Ce projet vise à créer un **nouveau site internet** pour le **GAC (Groupe d'Achat Collectif) de Pont-à-Celles**.   Le site actuel utilise LiteCart mais n'est plus maintenu ni adapté aux besoins spécifiques du projet.   Après analyse, il a été décidé de migrer vers **CodeIgniter 4**, afin d'offrir une solution moderne, maintenable, et évolutive, même en cas de changement de développeur.",
+  "main": "postcss.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:css": "postcss public/src/app.css -o public/assets/app.css --watch",
+    "build:css": "postcss public/src/app.css -o public/assets/app.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gilles-Chalon/gac-de-pac.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Gilles-Chalon/gac-de-pac/issues"
+  },
+  "homepage": "https://github.com/Gilles-Chalon/gac-de-pac#readme",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^4.1.13"
+  }
+}

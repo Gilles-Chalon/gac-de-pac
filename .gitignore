@@ -124,3 +124,9 @@ _modules/*
 
 /results/
 /phpunit*.xml
+
+# Node Modules
+/node_modules
+
+# Tailwind build
+/public/assets/app.css
