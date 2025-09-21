@@ -1,5 +1,9 @@
 # 🌱 GAC de PAC – Nouveau Site Web
 
+![Version](https://img.shields.io/badge/version-0.1.0--alpha-blue)
+![CodeIgniter](https://img.shields.io/badge/CodeIgniter-4.6.3-red)
+![Shield](https://img.shields.io/badge/Shield-1.2.0-red)
+
 ## 📖 Présentation
 
 Ce projet vise à créer un **nouveau site internet** pour le **GAC de Pont-à-Celles**.  

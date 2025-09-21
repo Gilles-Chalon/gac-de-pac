@@ -2,17 +2,15 @@
 
 Ce fichier suit le format [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et utilise la nomenclature [SemVer](https://semver.org/lang/fr/).
 
----
-
-## [0.1.0 - Alpha]
+## [0.1.0] - 2025-09-20 - Alpha
 
 ### Ajouté
 
-- Installation et configuration de CodeIgniter 4
-- Installation et configuration de Tailwind via PostCSS
-- Installation de mkdocs et documentation minimale
-
----
+- **Framework** : CodeIgniter 4.6.3 avec configuration initiale
+- **Styling** : Tailwind CSS 4.1 via PostCSS et configuration
+- **Documentation** : MkDocs avec structure de base et configuration
+- **Configuration** : Timezone Europe/Brussels, locale fr_FR, base URL
+- **Setup** : Environnement de développement initialisé
 
 ## Légende des sections
 
@@ -21,8 +19,6 @@ Ce fichier suit le format [Keep a Changelog](https://keepachangelog.com/fr/1.1.0
 - **Supprimé** – Fonctionnalités supprimées.
 - **Corrigé** – Résolution de bugs.
 - **Sécurité** – Changements liés à la sécurité.
-
----
 
 ## Nomenclature des versions
 
