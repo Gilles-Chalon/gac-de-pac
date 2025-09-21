@@ -17,8 +17,8 @@
                 GAC Pont-à-Celles
             </h1>
             <nav class="space-x-4">
-                <a href="#" class="text-gray-600 hover:text-green-700">Connexion</a>
-                <a href="#" class="text-gray-600 hover:text-green-700">Inscription</a>
+                <a href="login" class="text-gray-600 hover:text-green-700">Connexion</a>
+                <a href="register" class="text-gray-600 hover:text-green-700">Inscription</a>
             </nav>
         </div>
     </header>
