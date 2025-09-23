@@ -1,4 +1,4 @@
-# 🌱 GAC Pont-à-Celles – Nouveau Site Web
+# 🌱 GAC de PAC – Nouveau Site Web
 
 ![Version](https://img.shields.io/badge/version-0.1.0--alpha-blue)
 ![CodeIgniter](https://img.shields.io/badge/CodeIgniter-4.6.3-red)

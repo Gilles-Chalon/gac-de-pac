@@ -6,15 +6,18 @@ Ce fichier suit le format [Keep a Changelog](https://keepachangelog.com/fr/1.1.0
 
 ### Ajouté
 
-- **Authentification** : Intégration de CodeIgniter Shield 1.2.O
-- **Module Auth** : Configuration de base de CI Shield
-  - **Configuration** : Définition des groupes et du groupe par défaut
-  - **Routes** : Ajout des routes par défaut de Shield
+- **Dépendances** : Ajout de `codeigniter4/shield` pour l'authentification.
+- **Module Auth** : Structure de base pour la gestion de l'authentification.
+  - **Groupes** : Définition des rôles (`customer`, `producer`, `manager`, `admin`).
+  - **Routes** : Intégration des routes d'authentification de Shield.
+- **Helpers** : Ajout des helpers `auth` et `setting`.
 
 ### Modifié
 
-- **Page d'accueil** : Ajout des liens vers la pages d'inscription et de connexion
-- **Configuration** : Adaptation de la configuration de l'application pour l'intégration de Shield
+- **Configuration** :
+  - **Autoload** : Ajout du namespace `App\Modules\Auth` et des helpers.
+  - **Sécurité** : Utilisation de la session pour la protection CSRF.
+- **Vues** : Mise à jour des liens de connexion et d'inscription sur la page d'accueil.
 
 ## [0.1.0] - 2025-09-20
 
