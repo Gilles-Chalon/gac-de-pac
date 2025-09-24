@@ -25,7 +25,7 @@
 <body class="bg-background-light font-display text-gray-800 flex min-h-screen w-full flex-col">
 
     <!-- Header -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
+    <header class="bg-white shadow-sm sticky top-0 z-50 h-20">
         <div class="container mx-auto px-4 py-3 sm:max-w-6xl sm:py-4">
             <div class="flex justify-between items-center">
                 <!-- Logo -->
@@ -47,6 +47,11 @@
                         <?= lang('Auth.register') ?>
                     </a>
                     <?php else: ?>
+                    <a href="<?= site_url('profile') ?>"
+                        class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-green-700 transition-colors duration-200 rounded-lg hover:bg-gray-50 flex items-center space-x-1">
+                        <span class="material-symbols-outlined text-base">person</span>
+                        <span><?= lang('App.profile') ?></span>
+                    </a>
                     <span class="text-sm text-gray-600 px-3 py-1 bg-gray-50 rounded-lg">
                         👋 <?= lang('App.greetings') ?>, <strong><?= esc(auth()->user()->username) ?></strong>
                     </span>
@@ -57,6 +62,7 @@
                     </a>
                     <?php endif; ?>
                 </nav>
+
 
                 <!-- Mobile Menu Button - Uniquement visible sur mobile -->
                 <button id="mobile-menu-button"
@@ -89,6 +95,13 @@
                         <div class="font-medium"><?= lang('App.connectedAs') ?></div>
                         <div class="font-bold text-green-700"><?= esc(auth()->user()->username) ?></div>
                     </div>
+
+                    <a href="<?= site_url('profile') ?>"
+                        class="px-4 py-3 text-base font-medium text-gray-700 hover:text-green-700 hover:bg-gray-50 rounded-lg transition-colors duration-200 flex items-center space-x-3">
+                        <span class="material-symbols-outlined text-lg">person</span>
+                        <span><?= lang('App.profile') ?></span>
+                    </a>
+
                     <a href="<?= url_to('logout') ?>"
                         class="px-4 py-3 text-base font-medium text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded-lg transition-colors duration-200 flex items-center space-x-3">
                         <span class="material-symbols-outlined text-lg">logout</span>
@@ -96,6 +109,7 @@
                     </a>
                 </div>
                 <?php endif; ?>
+
             </div>
         </div>
     </header>
