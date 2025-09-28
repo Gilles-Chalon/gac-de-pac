@@ -46,7 +46,7 @@
     <!-- ================= Footer ================= -->
     <footer class="bg-white shadow-sm mt-auto">
         <div class="container mx-auto px-4 py-3 text-xs text-gray-500 text-center sm:text-sm">
-            © <?= date('Y') ?>
+            © <?= date('Y') ?> - <?= lang('App.appName') ?>. <?= lang('App.allRightsReserved') ?>
         </div>
     </footer>
 
