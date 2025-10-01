@@ -24,9 +24,6 @@ class ProfileController extends BaseController
         $this->userModel = auth()->getProvider();
     }
 
-    /**
-     * Affiche le tableau de bord du profil client
-     */
     public function dashboard()
     {
         $user = auth()->user();
@@ -40,39 +37,15 @@ class ProfileController extends BaseController
             return redirect()->to('/profile/edit');
         }
 
-        // Calcul du pourcentage de complétion du profil
-        $completionPercentage = $this->calculateProfileCompletion($profile);
-
         $data = [
             'title'   => 'Mon profil',
+            'user'    => $user,
             'profile' => $profile,
             'currentPage' => 'profile_dashboard',
             'navItems'    => $this->getNav(),
-            'completionPercentage' => $completionPercentage,
         ];
 
         return view(config('Customer')->views['dashboard'], $data);
-    }
-
-    private function calculateProfileCompletion(CustomerProfile $profile): int
-    {
-        $fields = [
-            'first_name' => 20,
-            'last_name'  => 20,
-            'phone'      => 20,
-            'address'    => 15,
-            'city'       => 15,
-            'postal_code' => 10,
-        ];
-
-        $completion = 0;
-        foreach ($fields as $field => $weight) {
-            if (!empty($profile->$field)) {
-                $completion += $weight;
-            }
-        }
-
-        return min($completion, 100);
     }
 
     public function edit()
@@ -184,9 +157,6 @@ class ProfileController extends BaseController
         return redirect()->to('profile/')->with('success', $message);
     }
 
-    /**
-     * Vérifie si tous les champs requis du profil sont remplis
-     */
     private function isProfileComplete(array $data): bool
     {
         $requiredFields = [

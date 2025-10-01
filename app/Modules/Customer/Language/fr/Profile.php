@@ -60,6 +60,7 @@ return [
     'loginCredentials'  => 'Identifiants de connexion',
     'usernameHint'      => 'Lettres, chiffres et points uniquement',
     'personalInfo'      => 'Informations personnelles',
+    'yourInformation'   => 'Vos informations',
     'contactInfo'       => 'Informations de contact',
     'firstName'         => 'Prénom',
     'lastName'          => 'Nom',
